@@ -26,6 +26,7 @@ func main() {
 
 	server := NewServer(db)
 	server.RegisterRouter(router)
+	// golang
 
 	log.Fatal(http.ListenAndServe(":6543", router))
 }
